@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Red Hat Display';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: hsl(225, 100%, 94%)  url('../images/pattern-background-desktop.svg') no-repeat; 
+}
+
+main {
+    position: relative;
+    width: 360px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero {
+    width: 100%;
+    height: 172px;
+    border-radius: 15px 15px 0 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    top: 12px;
+    margin: 24px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.text {
+    font-size: 13px;
+    margin: 0 50px;
+    text-align: center;
+    line-height: 1.3rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.product {
+    position: relative;
+    top: 3px;
+
+    margin: 32px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#music {
+    position: relative;
+    left: 8px;
+    bottom: 2px;
+    margin: 0 24px;
+    width: 38px;
+    height: 38px;
+}
+
+#plan {
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.4rem;
+    color: hsl(223, 47%, 23%);
+
+}
+
+span {
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+
+#change {
+    position: relative;
+    right: 5px;
+    bottom: 1px;
+    color: hsl(245, 75%, 52%);
+    font-size: 11.2px;
+    font-weight: 900;
+}
+
+#change:hover {
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+button {
+    width: 285px;
+    height: 40px;
+    margin: 12px;
+    
+    border-radius: 8px;
+    border: none;
+
+    background: hsl(245, 75%, 52%);
+    color: white;
+
+    font-size: 12px;
+    font-weight: 900;
+}
+
+button:hover {
+    background: hsl(245, 75%, 65%);
+    cursor: pointer;
+}
+
+#cancel {
+    margin: 14px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+#cancel:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    main {
+        width: 305px;
+    }
+}
